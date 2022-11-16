@@ -1,0 +1,121 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Tajawal', sans-serif;
+ }
+ 
+ .encabezado {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     background-color: white;
+     height: 100px;
+     -webkit-box-shadow: 1px 5px 8px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 1px 5px 8px 3px rgba(0, 0, 0, 0.5);
+     box-shadow: 1px 5px 8px 3px rgba(0, 0, 0, 0.5);
+     position: fixed;
+     top: 0;
+     z-index: 100;
+     position: 0;
+     color: white;
+ }
+ 
+ .contenedorLogo {
+     width: 100%;
+     margin-left: 20px;
+     display: flex;
+     justify-content: flex-start;
+ }
+ 
+ .logo {
+     width: 13%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+ }
+ 
+ .logo img {
+     width: 100px;
+     height: 100px;
+ }
+ 
+ .titulo {
+     width: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 50px;
+     text-align: center;
+     margin: 0;
+ }
+ 
+ @media(max-width:768px) {
+     .encabezado {
+         display: flex;
+         height: 90px;
+         justify-content: center;
+     }
+     .contenedorLogo {
+         justify-content: space-around;
+         width: 90%
+     }
+     .titulo {
+         width: 60%;
+     }
+     .logo img {
+         width: 80px;
+         height: 80px;
+     }
+ }
+ 
+ @media(max-width:600px) {
+     .encabezado {
+         height: 90px;
+     }
+     .contenedorLogo {
+         width: 90%;
+         justify-content: space-between;
+         justify-content: center;
+     }
+     .logo {
+         width: 40%;
+         justify-content: center;
+         padding: 14px;
+     }
+     .titulo {
+         width: 80%;
+     }
+ }
+ 
+ @media(max-width:465px) {
+     .contenedorLogo {
+         width: 90%;
+     }
+     .logo {
+         width: 40%;
+         justify-content: flex-start;
+         padding: 0;
+     }
+     .logo img {
+         width: 70px;
+         height: 70px;
+     }
+     .titulo {
+         width: 80%;
+         font-size: 40px;
+     }
+ }
+ 
+ @media(max-width:375px) {
+     .logo {
+         width: 50%;
+     }
+     .logo img {
+         width: 65px;
+         height: 65px;
+     }
+     .titulo {
+         width: 75%;
+         font-size: 30px;
+     }
+ }

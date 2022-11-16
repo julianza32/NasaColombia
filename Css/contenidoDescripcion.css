@@ -1,0 +1,174 @@
+.contenedor-descripcionP {
+    margin-top: 25px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.titulo-descripcion {
+    width: 100%;
+    margin: 0 5%;
+    color: #648c01;
+    padding: 10px;
+    font-size: 70px;
+}
+
+.subContenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.subdescripcionPSup {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subdescripcionPSup img{
+    width: 840px;
+}
+
+.subdescripcionPMed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.subdescripcionPMed h3{
+    width: 100%;
+    color: #648c01;
+}
+
+.contenedor-descripcion-izq {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 25px 10px;
+    width: 35%;
+    
+}
+.contenedor-descripcion-izq p{
+    margin: 15px auto;
+
+}
+
+.contenedor-descripcion-izq img {
+    width: 70%;
+}
+
+.contenedor-descripcion-der {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-descripcion-der video {
+    width:100%;
+    height: auto;
+    border-radius: 5px;
+}
+.subdescripcionPInf {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.Confort{
+    background-image: url('../Icons/confort.png');
+    background-repeat: no-repeat;
+    background-position: 70px 0px;
+    font-size: 1.25rem;
+    background-size: 25px;
+}
+
+.Valor{
+    background-image: url('../Icons/valor.png');
+    background-repeat: no-repeat;
+    background-position: 110px 0px;
+    font-size: 1.25rem;
+    background-size: 25px;
+}
+.Economia{
+    background-image: url('../Icons/economic.png');
+    background-repeat: no-repeat;
+    background-position: 140px 1px;
+    font-size: 1.25rem;
+    background-size: 25px;
+}
+.Ambiente{
+    background-image: url('../Icons/ambiental.png');
+    background-repeat: no-repeat;
+    background-position: 215px 0px;
+    font-size: 1.25rem;
+    background-size: 25px;
+}
+.Durabilidad{
+    background-image: url('../Icons/duracion.png');
+    background-repeat: no-repeat;
+    background-position: 110px 0px;
+    font-size: 1.25rem;
+    background-size: 25px;
+}
+.Mantenimiento{
+    background-image: url('../Icons/mantenimiento.png');
+    background-repeat: no-repeat;
+    background-position: 200px -5px;
+    font-size: 1.25rem;
+    background-size: 40px;
+}
+.Simple{
+    background-image: url('../Icons/simple.png');
+    background-repeat: no-repeat;
+    background-position: 65px 0px;
+    font-size: 1.25rem;
+    background-size: 25px;
+}
+@media (max-width: 768px) {
+    .contenedor-descripcionP {
+        width: 100%;
+        height: auto;
+    }
+    .subContenedor {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .titulo-descripcion {
+        text-align: center;
+        margin: 0 0 10px 0;
+        font-size: 35px;
+    }
+    .subdescripcionPSup{
+     margin: auto;
+     width: 100%;
+    }
+    .subdescripcionPSup img{
+        margin: 15px auto;
+    }
+    .subdescripcionPMed {
+    margin: 20px auto;
+    width: 100%;
+    }
+    .subdescripcionPMed img, p, video{
+        margin: auto;
+        width: 100%;
+      }
+    .contenedor-descripcion-izq {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .contenedor-descripcion-der {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .contenedor-imagen-descripcion {
+        width: 95%;
+    }
+}

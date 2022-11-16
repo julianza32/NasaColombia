@@ -1,0 +1,38 @@
+.galeria, .accesorios {
+    padding: 0 5%;
+}
+
+.imagen-galeria, .imagen-accesorios {
+    width: 28%;
+    height: auto;
+    margin: auto;
+}
+
+ .tituloGaleria, .tituloAccesorios {
+    color: #2f5f02;
+    font-size: 70px;
+    margin:0;
+    margin-bottom: 25px;
+}
+
+@media(max-width:768px) {
+    .galeria {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .tituloGaleria, .tituloAccesorios {
+        text-align: center;
+        font-size: 35px;
+    }
+    .imagen-galeria {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .imagen-accesorios{
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+   
+}

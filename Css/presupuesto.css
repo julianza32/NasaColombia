@@ -1,0 +1,348 @@
+.form-presupuesto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.presupuesto {
+    margin-top: 50px;
+    padding: 0 5%;
+}
+
+.ciudad {
+    width: 50%;
+    padding: 0 10px 0 0;
+}
+
+.ciudad {
+    margin: 20px 0;
+}
+
+.tipoPiscina {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.tipoPiscina .titulo-tipo-piscina {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.tipoPiscina label {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tipoPiscina input[type="radio"] {
+    display: none;
+}
+
+.tipoPiscina input[type="radio"]:checked+label {
+    background-color: #caefb3;
+    border-bottom: solid 2px #2f5f02;
+    border-radius: 5px;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+.tipo-tarjeta {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 40%;
+}
+
+.tipo-tarjeta label {
+    margin: auto;
+    text-align: center;
+}
+
+.tipo-tarjeta label h1 {
+    font-size: 20px;
+}
+
+.tipo-tarjeta label img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.formas {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.formas .titulo-forma-piscina {
+    width: 100%;
+    padding-left: 20px;
+}
+
+
+.forma-tarjeta input[type="radio"] {
+    display: none;
+}
+
+.formas input[type=radio]:checked+label {
+    background-color: #caefb3;
+    border-bottom: solid 2px #2f5f02;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.forma-tarjeta {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    margin: 20px;
+}
+
+.forma-tarjeta:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.forma-tarjeta label img {
+    width: 200px;
+    height: 150px;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.forma-tarjeta label h1 {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+}
+
+.forma-tarjeta label .tituloRectangular {
+    left: 24%;
+    top: 42%;
+}
+
+.forma-tarjeta label .tituloCircular {
+    left: 33%;
+    top: 42%;
+}
+
+.forma-tarjeta label .tituloRinon {
+    left: 39%;
+    top: 40%;
+}
+
+.forma-tarjeta label .tituloCuadrada {
+    left: 31%;
+    top: 42%;
+}
+
+.tamanos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #abce00;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.contenedorImagenMedidas {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.entradasMedidas {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+}
+
+.imagenMedidas {
+    width: 60%;
+    border-radius: 5px;
+    animation: aparecerImgForma 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.contenedorMedidas {
+    animation: aparecerEntraForma 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes aparecerImgForma {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes aparecerEntraForma {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.datosPersonales {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #225802;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.datosPersonales>.form-group>label {
+    color: white;
+}
+
+.datosPersonales>h1 {
+    color: white;
+}
+
+.otra-ciudad{
+    display: none;
+    margin-top: 10px;
+}
+
+
+@media(max-width:991px) {
+    .contenedorImagenMedidas {
+        width: 80%;
+    }
+    .imagenMedidas {
+        width: 50%;
+    }
+    @keyframes aparecerImgForma {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 50%;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .presupuesto {
+        padding: 5%;
+    }
+    .imagenMedidas {
+        width: 90%;
+    }
+    .contenedorImagenMedidas {
+        width: 60%;
+    }
+    .entradasMedidas {
+        width: 90%;
+    }
+    @keyframes aparecerImgForma {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 90%;
+        }
+    }
+    @keyframes aparecerEntraForma {
+        from {
+            width: 40%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:530px) {
+    .presupuesto {
+        padding: 5%;
+    }
+    .tipoPiscina {
+        flex-direction: column;
+    }
+    .tipoPiscina .tipo-tarjeta {
+        margin: 20px auto;
+    }
+    .tipo-tarjeta {
+        width: 70%;
+    }
+    .tipo-tarjeta label img {
+        height: 250px;
+    }
+    .formas {
+        flex-direction: column;
+        height: auto;
+    }
+    .formas .forma-tarjeta {
+        margin: 20px auto;
+        width: 70%;
+    }
+    .forma-tarjeta label img {
+        width: 100%;
+        height: 50%;
+    }
+    .forma-tarjeta label .tituloRectangular {
+        left: 33%;
+        top: 45%;
+    }
+    .forma-tarjeta label .tituloCircular {
+        left: 39%;
+        top: 45%;
+    }
+    .forma-tarjeta label .tituloRinon {
+        left: 46%;
+        top: 42%;
+    }
+    .forma-tarjeta label .tituloCuadrada {
+        left: 38%;
+        top: 46%;
+    }
+    .imagenMedidas {
+        width: 90%;
+    }
+    .contenedorImagenMedidas {
+        width: 90%;
+    }
+    .entradasMedidas {
+        width: 90%;
+    }
+    @keyframes aparecerImgForma {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 90%;
+        }
+    }
+    @keyframes aparecerEntraForma {
+        from {
+            width: 40%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+}
